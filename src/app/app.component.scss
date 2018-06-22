@@ -1,0 +1,44 @@
+.heading{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.buttonsAdd{
+    .col{
+        text-align: center;
+    }
+}
+
+.noteList{
+    padding: 20px;
+    margin: 0;
+    
+    .col{
+        border-bottom: 2px solid green;
+        text-align: center;
+    }
+    .selected{
+        border: none;
+    }
+}
+
+.renderedList{}
+
+.z-depth-3{
+    margin: 20px;
+}
+
+.select-view{
+    display: flex;
+    justify-content: flex-end;
+    color: green;
+    padding: 0 20px;
+    i{
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    .active{
+        border: 2px solid green;
+    }
+}

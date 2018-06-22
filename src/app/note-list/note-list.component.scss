@@ -1,0 +1,13 @@
+.list-view{
+    display: flex;
+    justify-content: left;
+    div{
+        padding: 0 10px;
+    }
+}
+
+.noListFound{
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+}

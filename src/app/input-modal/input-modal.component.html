@@ -1,0 +1,29 @@
+<div class="row formDiv" *ngIf="display">
+  <span class="hideForm" (click)="_hideForm()">X</span>
+  <form class="col s12" (submit)="submit()" #f="ngForm">
+    <div class="row">
+      <div class="row">
+        <div class="input-field col s12" *ngIf="type != 'text'">
+          <input id="title" type="text" class="validate"  [(ngModel)]="modal.title" name="title">
+          <label for="title">Title</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="desc" type="text" class="validate" [(ngModel)]="modal.desc" name="Description">
+          <label for="desc">Description</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12" *ngIf="type != 'text' && type != 'article'">
+          <input type="file" (change)="onChange($event)" name="file" />
+        </div>
+      </div>
+      <div class="error">{{error}}</div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="submit" class="waves-effect waves-light btn" value="submit" />
+        </div>
+      </div>
+    </div>
+  </form>
